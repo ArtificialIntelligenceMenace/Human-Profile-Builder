@@ -1,4 +1,4 @@
-pandas
-recordlinkage
-difflib
-re
+
+pandas==1.5.3
+recordlinkage==0.16
+six==1.16.0
