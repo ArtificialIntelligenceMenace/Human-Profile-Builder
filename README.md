@@ -15,7 +15,7 @@ Hackathon: InnoHack 2024
 ### Installation
 
 1. Клонируйте репозиторий:
-git clone https://github.com/yourusername/innohack.git cd Human-Profile-Builder
+git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git cd Human-Profile-Builder
 
 2. Соберите Docker-образ:
 docker build -t innohack:latest .
@@ -37,10 +37,6 @@ python main.py
 ## Конфигурация
 
 Проект использует файл `requirements.txt` для определения зависимостей. Вы можете редактировать этот файл для добавления новых библиотек или изменений версий.
-
-## Лицензия
-
-[Здесь должна быть информация о лицензии]
 
 ## Автор
 
