@@ -1,7 +1,7 @@
 <h2> Hi, It's Human-Profile-Builder! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 <h5>Hackathon: InnoHack 2024</h5>
-<img align='right' src="Logo.jpg" width="600">
-
+<img src="Logo.jpg" width="600">
+</br>
 
 
 ***Human-Profile-Builder** - это проект, разработанный командой Artificial Intelligence Menace для хакатона InnoHack 2024. Этот инструмент предназначен для построения профилей людей на основе различных данных.*
