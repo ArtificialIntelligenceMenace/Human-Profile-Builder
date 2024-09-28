@@ -11,23 +11,19 @@
 
 
 1. Клонируйте репозиторий:
-git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git cd Human-Profile-Builder
+***git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git cd Human-Profile-Builder***
 
 2. Соберите Docker-образ:
-docker build -t innohack:latest .
+***docker build -t innohack:latest***
 
 3. Запустите контейнер:
-docker run -it --rm -v $(pwd):/app innohack:latest
-
-Чтобы запустить основной скрипт проекта:
-
-python main.py
+***docker run -it --rm -v $(pwd):/app innohack:latest***
 
 ## Использование
 
 Чтобы запустить основной скрипт проекта:
 
-python main.py
+***python main.py***
 
 
 ## Конфигурация
