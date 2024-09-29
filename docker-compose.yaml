@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: your-app-image-name
+    ports:
+      - "8000:8000"  # Замените 8000 на нужный порт вашего приложения
+    environment:
+      - CLICKHOUSE_HOST=clickhouse
+      - CLICKHOUSE_PORT=9000
+    volumes:
+      - ./app:/app
+    depends_on:
+      - clickhouse
+
+  clickhouse:
+    image: yandex/clickhouse-server:latest
+    ports:
+      - "9000:9000"
+      - "8123:8123"
+    environment:
+      - CLICKHOUSE_USER=clickhouse
+      - CLICKHOUSE_PASSWORD=password
+    volumes:
+      - ./clickhouse_data:/var/lib/clickhouse
+
+volumes:
+  clickhouse_data:

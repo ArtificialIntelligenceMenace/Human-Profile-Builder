@@ -11,13 +11,14 @@
 
 
 1. Клонируйте репозиторий:
-***git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git cd Human-Profile-Builder***
+***git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git ***
+***cd Human-Profile-Builder***
 
 2. Соберите Docker-образ:
 ***docker build -t innohack:latest***
 
 3. Запустите контейнер:
-***docker run -it --rm -v $(pwd):/app innohack:latest***
+***docker run innohack:latest***
 
 ## Использование
 
@@ -29,6 +30,11 @@
 ## Конфигурация
 
 Проект использует файл `requirements.txt` для определения зависимостей. Вы можете редактировать этот файл для добавления новых библиотек или изменений версий.
+
+pandas==2.2.3
+recordlinkage==0.16
+six==1.16.0
+progress==1.6
 
 
 

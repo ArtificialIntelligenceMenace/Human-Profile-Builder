@@ -97,7 +97,7 @@ def main():
     # Compare 1 and 3 bar = 3
     print("Совпадения между 1 и 3 БД")
     indexer = recordlinkage.Index()
-    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name')
+    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=3)
     candidate_links = indexer.index(first, third)   
     print("Количество претендентов на совпадение: ", len(candidate_links))
     compare = recordlinkage.Compare()
@@ -115,7 +115,7 @@ def main():
     # Compare 1 and 2 bar = 4
     print("Совпадения между 1 и 2 БД")
     indexer = recordlinkage.Index()
-    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name')
+    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=3)
     candidate_links = indexer.index(first, second)   
     print("Количество претендентов на совпадение: ", len(candidate_links))
     compare = recordlinkage.Compare()
@@ -134,7 +134,7 @@ def main():
     # Compare 1 and 1 bar = 5
     print("Совпадения между 1 и 1 БД")
     indexer = recordlinkage.Index()
-    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name')
+    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=3)
     candidate_links = indexer.index(first, first)   
     print("Количество претендентов на совпадение: ", len(candidate_links))
     compare = recordlinkage.Compare()
@@ -154,7 +154,7 @@ def main():
     # Compare 2 and 2 bar = 6
     print("Совпадения между 2 и 2 БД")
     indexer = recordlinkage.Index()
-    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=7)
+    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=3)
     candidate_links = indexer.index(second, second)   
     print("Количество претендентов на совпадение: ", len(candidate_links))
     compare = recordlinkage.Compare()
@@ -172,7 +172,7 @@ def main():
     # Compare 3 and 3 bar = 7
     print("Совпадения между 3 и 3 БД")
     indexer = recordlinkage.Index()
-    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name')
+    indexer.sortedneighbourhood(left_on='full_name', right_on='full_name', window=3)
     candidate_links = indexer.index(third, third)   
     print("Количество претендентов на совпадение: ", len(candidate_links))
     compare = recordlinkage.Compare()
