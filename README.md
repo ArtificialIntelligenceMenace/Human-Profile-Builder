@@ -15,14 +15,14 @@
 ***cd Human-Profile-Builder***
 
 2. Соберите Docker-образ:
-***docker build -t innohack:latest***
+***docker-compose build***
 
 3. Запустите контейнер:
-***docker run innohack:latest***
+***docker-compose up***
 
 ## Использование
 
-Чтобы запустить основной скрипт проекта:
+Чтобы запустить основной скрипт проекта отдельно вне docker:
 
 ***python main.py***
 
