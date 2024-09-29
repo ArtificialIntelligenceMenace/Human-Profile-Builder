@@ -1,3 +1,4 @@
 input_data/main1.csv
 input_data/main2.csv
 input_data/main3.csv
+*.pyc
