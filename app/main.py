@@ -5,7 +5,7 @@ import os
 
 
 def main():
-    os.system("")
+    os.system("00_initial_datasets_tables.sh")
     linkage.main()
 
 if __name__=="__main__":
