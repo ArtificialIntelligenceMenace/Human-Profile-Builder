@@ -11,7 +11,7 @@
 
 
 1. Клонируйте репозиторий:
-***git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git ***
+***git clone https://github.com/ArtificialIntelligenceMenace/Human-Profile-Builder.git***
 ***cd Human-Profile-Builder***
 
 2. Соберите Docker-образ:
